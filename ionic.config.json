@@ -1,0 +1,7 @@
+{
+  "name": "country-list",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

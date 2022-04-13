@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot='start'>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalii</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <img src="https://avatars.dicebear.com/api/croodles-neutral/4.svg" />
+    <ion-card-header>
+    <ion-card-title>{{name}}</ion-card-title>
+    <ion-card-subtitle>Subtitle</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        Aria: {{countryDetails?.area}}
+      </ion-item>
+      <ion-item>
+        Populatie: {{countryDetails?.population}}
+      </ion-item>
+      <ion-list>
+        <ion-item *ngFor="let c of getCurrencies(countryDetails)">
+          {{c.name}} {{c.symbol}}
+        </ion-item>
+      </ion-list>
+    Informatii in stil card
+    </ion-card-content>
+    </ion-card>
+</ion-content>
